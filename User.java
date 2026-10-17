@@ -13,7 +13,7 @@ public class User {
             }
 
             if (!username.matches(                 //checking username validality using the matches() built in function
-                    "[A-Za-z0-9_.]+@[A-Za-z0-9][A-Za-z0-9.-]*\\.[A-Za-z]{2,}"
+                    "[A-Za-z0-9_.+%-]+@[A-Za-z0-9][A-Za-z0-9.-]*\\.[A-Za-z]{2,}"
             )) {
                 throw new IllegalArgumentException(
                         "Please enter a valid Email as username"
