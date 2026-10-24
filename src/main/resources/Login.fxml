@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="300" prefWidth="400" spacing="15" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="LoginController">
+
+    <Label text="Login Page" textFill="#0022ff" />
+
+    <TextField fx:id="usernameField" maxWidth="250" promptText="Username">
+      <font>
+         <Font name="System Bold Italic" size="13.0" />
+      </font></TextField>
+
+    <PasswordField fx:id="passwordField" maxWidth="250" promptText="Password">
+      <font>
+         <Font name="System Bold Italic" size="13.0" />
+      </font></PasswordField>
+
+    <Button onAction="#handleLogin" text="Login" textFill="#0069ff" />
+
+    <Label fx:id="errorLabel" style="-fx-text-fill: red;" text="" />
+
+</VBox>
